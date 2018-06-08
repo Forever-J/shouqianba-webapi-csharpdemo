@@ -82,7 +82,7 @@ namespace demo
 
         public static JObject pay(string terminal_sn,string terminal_key)
         {
-            string url = api_domain + "upay/v2/pay";
+            string url = api_domain + "/upay/v2/pay";
             JObject Jparams = new JObject();
             Jparams.Add(new JProperty("terminal_sn", terminal_sn));
             Jparams.Add(new JProperty("client_sn", ""));
@@ -261,7 +261,7 @@ namespace demo
 
         public static JObject precreate(string terminal_sn,string terminal_key)
         {
-            string url = api_domain + "upay/v2/precreate";
+            string url = api_domain + "/upay/v2/precreate";
             JObject Jparams = new JObject();
 
             Jparams.Add(new JProperty("terminal_sn", terminal_sn));
